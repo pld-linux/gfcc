@@ -21,7 +21,6 @@ BuildRequires:	libipfwc
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-
 %description
 gfcc (GTK+ Firewall Control Center) is a GTK+ application which can
 control Linux firewall policies and rules, based on ipchains package.
@@ -40,22 +39,22 @@ controlar políticas e regras de firewall, baseado no pacote ipchains.
 %patch1 -p0
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
 %{__automake}
 %configure \
-	--with-ipfwc=/usr/lib
+	--with-ipfwc=/usr/%{_lib}
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/System/Administration,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System/Administration
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 %clean
@@ -66,5 +65,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gfcc
-%{_applnkdir}/System/Administration/gfcc.desktop
+%{_desktopdir}/gfcc.desktop
 %{_pixmapsdir}/*
