@@ -1,12 +1,12 @@
 Summary:	GTK firewall control center
 Summary(pl):	Centrum kontroli firewalla
 Name:		gfcc
-Version:	0.7.2.1
+Version:	0.7.3
 Release:	1
 Copyright:	GPL
 Group:		X11/Networking/Utilities
 Group(pl):	X11/Sieciowe/Narzêdzia
-Source0:	http://account.joayo.net/~tri/%{name}-%{version}.tar.gz
+Source0:	http://icarus.autostock.co.kr/%{name}-%{version}.tar.gz
 Source1:	gfcc.desktop
 Patch0:		gfcc-inc.patch
 Patch1:		gfcc-gtkrc.patch
