@@ -1,6 +1,6 @@
-Summary:	GTK firewall control center
+Summary:	GTK+ firewall control center
 Summary(pl):	Centrum kontroli firewalla
-Summary(pt_BR):	Centro de controle de firewall GTK
+Summary(pt_BR):	Centro de controle de firewall GTK+
 Name:		gfcc
 Version:	0.7.4
 Release:	9
