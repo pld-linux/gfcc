@@ -12,7 +12,7 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-inc.patch
 Patch1:		%{name}-gtkrc.patch
-Icon:		%{name}.xpm
+Icon:		gfcc.xpm
 URL:		http://account.joayo.net/~tri/index.html
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libipfwc
