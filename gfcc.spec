@@ -12,8 +12,11 @@ Patch0:		%{name}-inc.patch
 Patch1:		%{name}-gtkrc.patch
 Icon:		gfcc.xpm
 URL:		http://account.joayo.net/~tri/index.html
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.0
 BuildRequires:	libipfwc
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -32,18 +35,23 @@ GTK+, która umo¿liwia zarz±dzanie filtrowaniem pakietów IP.
 %patch1 -p0
 
 %build
-%configure2_13 \
+rm -f missing
+libtoolize --copy --force
+aclocal
+autoconf
+automake -a -c -f
+%configure \
 	--with-ipfwc=/usr/lib
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Administration,%{_datadir}/pixmaps}
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/System/Administration,%{_pixmapsdir}}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Administration
-install %{SOURCE2} $RPM_BUILD_ROOT%{_datadir}/pixmaps
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System/Administration
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 gzip -9nf README
 
@@ -52,8 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.gz
+%doc *.gz
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gfcc
-%{_applnkdir}/Administration/gfcc.desktop
-%{_datadir}/pixmaps/*
+%{_applnkdir}/System/Administration/gfcc.desktop
+%{_pixmapsdir}/*
