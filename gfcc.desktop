@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=gfcc
+Comment=GTK firewall control center
+Comment[pl]=Centrum kontroli '¶ciany ognia'
+Exec=gfcc
+Terminal=0
+Type=Application

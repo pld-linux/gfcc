@@ -1,0 +1,8 @@
+--- gfcc.h~	Fri Nov 19 16:09:15 1999
++++ gfcc.h	Fri Nov 19 16:09:25 1999
+@@ -1,4 +1,4 @@
+-#include "libipfwc.h"
++#include <libipfwc.h>
+ #include <netdb.h>
+ 
+ #include "config.h"
