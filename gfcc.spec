@@ -1,11 +1,11 @@
 Summary:	GTK firewall control center
 Summary(pl):	Centrum kontroli firewalla
 Name:		gfcc
-Version:	0.7.3
+Version:	0.7.4
 Release:	1
-Copyright:	GPL
-Group:		X11/Networking/Utilities
-Group(pl):	X11/Sieciowe/Narzêdzia
+License:	GPL
+Group:		X11/Applications/Networking
+Group(pl):	X11/Aplikacje/Sieciowe
 Source0:	http://icarus.autostock.co.kr/%{name}-%{version}.tar.gz
 Source1:	gfcc.desktop
 Patch0:		gfcc-inc.patch
@@ -21,8 +21,8 @@ BuildRoot:	/tmp/%{name}-%{version}-root
 %define		_applnkdir	%{_datadir}/applnk
 
 %description
-gfcc (GTK+ Firewall Control Center) is a GTK+ application which can
-control Linux firewall policies and rules, based on ipchains package.
+gfcc (GTK+ Firewall Control Center) is a GTK+ application which can control
+Linux firewall policies and rules, based on ipchains package.
 
 %description -l pl
 gfcc jest aplikacj± opart± na ipchains i wykorzystuj±c± bibliotekê GTK+,
