@@ -3,7 +3,7 @@ Summary(pl):	Centrum kontroli firewalla
 Summary(pt_BR):	Centro de controle de firewall GTK
 Name:		gfcc
 Version:	0.7.4
-Release:	5
+Release:	6
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://icarus.autostock.co.kr/%{name}-%{version}.tar.gz
