@@ -7,5 +7,5 @@ Exec=gfcc
 Terminal=false
 Type=Application
 Encoding=UTF-8
-Categories=SystemSetup;
+Categories=GTK;SystemSetup;
 # vi: encoding=utf-8
