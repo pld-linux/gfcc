@@ -34,7 +34,7 @@ GTK+, która umo¿liwia zarz±dzanie filtrowaniem pakietów IP.
 %patch1 -p0
 
 %build
-%configure \
+%configure2_13 \
 	--with-ipfwc=/usr/lib
 %{__make}
 
