@@ -11,9 +11,7 @@ Source1:	gfcc.desktop
 Patch0:		gfcc-inc.patch
 Patch1:		gfcc-gtkrc.patch
 URL:		http://account.joayo.net/~tri/index.html
-BuildRequires:	XFree86-devel
 BuildRequires:	gtk+-devel >= 1.2.0
-BuildRequires:	glib-devel >= 1.2.0
 BuildRequires:	libipfwc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
