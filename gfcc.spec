@@ -41,7 +41,7 @@ controlar políticas e regras de firewall, baseado no pacote ipchains.
 
 %build
 rm -f missing
-libtoolize --copy --force
+%{__libtoolize}
 aclocal
 %{__autoconf}
 %{__automake}
