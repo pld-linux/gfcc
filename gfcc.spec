@@ -58,14 +58,12 @@ install -d $RPM_BUILD_ROOT{%{_applnkdir}/System/Administration,%{_pixmapsdir}}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/System/Administration
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/gfcc
 %{_applnkdir}/System/Administration/gfcc.desktop
