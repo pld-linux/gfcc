@@ -6,13 +6,14 @@ Version:	0.7.4
 Release:	6
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://icarus.autostock.co.kr/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	37644150506d6a76d4b0ec3f0e5a14aa
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-inc.patch
 Patch1:		%{name}-gtkrc.patch
 Icon:		gfcc.xpm
-URL:		http://account.joayo.net/~tri/index.html
+#URL:		http://account.joayo.net/~tri/index.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gtk+-devel >= 1.2.0
