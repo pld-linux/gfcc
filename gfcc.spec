@@ -34,7 +34,7 @@ która umo¿liwia zarz±dzanie filtrowaniem pakietów IP.
 LDFLAGS="-s"; export LDFLAGS
 %configure \
 	--with-ipfwc=/usr/lib
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
