@@ -43,8 +43,8 @@ controlar políticas e regras de firewall, baseado no pacote ipchains.
 rm -f missing
 libtoolize --copy --force
 aclocal
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure \
 	--with-ipfwc=/usr/lib
 %{__make}
