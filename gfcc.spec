@@ -20,7 +20,6 @@ BuildRequires:	libipfwc
 BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 gfcc (GTK+ Firewall Control Center) is a GTK+ application which can
