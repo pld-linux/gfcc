@@ -1,8 +1,9 @@
 [Desktop Entry]
 Name=Gfcc
 Comment=GTK firewall control center
-Comment[pl]=Centrum kontroli '¶ciany przeciwogniowej'
+Comment[pl]=Centrum kontroli 'Å›ciany przeciwogniowej'
 Icon=gfcc.png
 Exec=gfcc
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
