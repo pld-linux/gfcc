@@ -12,7 +12,6 @@ Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-inc.patch
 Patch1:		%{name}-gtkrc.patch
-Icon:		gfcc.xpm
 #URL:		http://account.joayo.net/~tri/index.html
 BuildRequires:	autoconf
 BuildRequires:	automake
