@@ -2,10 +2,9 @@
 Name=Gfcc
 Comment=GTK firewall control center
 Comment[pl]=Centrum kontroli 'ściany przeciwogniowej'
-Icon=gfcc.png
+Icon=gfcc
 Exec=gfcc
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=GTK;System;X-Administration;
 # vi: encoding=utf-8
